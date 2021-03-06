@@ -1,10 +1,9 @@
 import express from "express";
 import { success } from "consola";
+import { PORT } from "./config";
 
 // initialize app
 const app = express();
-
-const PORT = 4000;
 
 const startApp = () => {
   app.listen(PORT, () =>
